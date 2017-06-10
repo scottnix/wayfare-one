@@ -580,15 +580,22 @@ input[type="radio"] {
   width: auto;
 }
 
-::-moz-placeholder {
+::-webkit-input-placeholder {
   color: #222;
   font-family: 'Raleway', sans-serif;
   opacity: 1;
 }
 
-::-webkit-input-placeholder {
+:-ms-input-placeholder {
   color: #222;
   font-family: 'Raleway', sans-serif;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #222;
+  font-family: 'Raleway', sans-serif;
+  opacity: 1;
 }
 
 button,
@@ -1046,11 +1053,15 @@ img.alignright,
   width: 180px;
 }
 
-.genesis-nav-menu .search-form ::-moz-placeholder {
+.genesis-nav-menu .search-form ::-webkit-input-placeholder {
   color: #fff;
 }
 
-.genesis-nav-menu .search-form ::-webkit-input-placeholder {
+.genesis-nav-menu .search-form :-ms-input-placeholder {
+  color: #fff;
+}
+
+.genesis-nav-menu .search-form ::placeholder {
   color: #fff;
 }
 
